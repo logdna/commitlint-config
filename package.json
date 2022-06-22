@@ -1,7 +1,7 @@
 {
   "name": "@logdna/commitlint-config-mezmo",
   "description": "Commitlint configuration to enforce commit message best practices",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "index.js",
   "bin": {
     "commitlint-mezmo": "./bin/cli.js"
