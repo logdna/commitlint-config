@@ -3,6 +3,7 @@ library 'magic-butler-catalogue'
 def PROJECT_NAME = "commitlint-config-mezmo"
 def CURRENT_BRANCH = [env.CHANGE_BRANCH, env.BRANCH_NAME]?.find{branch -> branch != null}
 def DEFAULT_BRANCH = 'main'
+def TRIGGER_PATTERN = ".*@logdnabot.*"
 
 pipeline {
   agent none
@@ -10,6 +11,10 @@ pipeline {
   options {
     timestamps()
     ansiColor 'xterm'
+  }
+
+  triggers {
+    issueCommentTrigger(TRIGGER_PATTERN)
   }
 
   environment {
@@ -20,6 +25,18 @@ pipeline {
   }
 
   stages {
+    stage('Validate PR Source') {
+      when {
+        expression { env.CHANGE_FORK }
+        not {
+          triggeredBy 'issueCommentCause'
+        }
+      }
+      steps {
+        error("A maintainer needs to approve this PR for CI by commenting")
+      }
+    }
+
     stage('Test Suite') {
       matrix {
         axes {
