@@ -1,5 +1,12 @@
 ## Changelog
 
+## [1.0.1](https://github.com/logdna/commitlint-config-mezmo/compare/v1.0.0...v1.0.1) (2022-06-22)
+
+
+### Bug Fixes
+
+* **ci**: Add triggers for approval to run forked PRs [e8e43c9](https://github.com/logdna/commitlint-config-mezmo/commit/e8e43c9e25f60aa4cf6e7d93138abd83654f7a05) - Darin Spivey, closes: [#3](https://github.com/logdna/commitlint-config-mezmo/issues/3)
+
 # 1.0.0 (2022-06-22)
 
 
