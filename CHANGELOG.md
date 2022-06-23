@@ -1,5 +1,17 @@
 ## Changelog
 
+# [2.0.0](https://github.com/logdna/commitlint-config/compare/v1.0.1...v2.0.0) (2022-06-23)
+
+
+### Bug Fixes
+
+* **pkg**: The package name should be `commitlint-config` [0259438](https://github.com/logdna/commitlint-config/commit/02594382ba332f69bff129228a5ef759abdcfe09) - Darin Spivey, closes: [#5](https://github.com/logdna/commitlint-config/issues/5)
+
+
+### **BREAKING CHANGES**
+
+* **pkg:** The package name should be `commitlint-config`
+
 ## [1.0.1](https://github.com/logdna/commitlint-config/compare/v1.0.0...v1.0.1) (2022-06-22)
 
 
