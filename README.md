@@ -1,11 +1,11 @@
-## commitlint-config-mezmo
+## commitlint-config
 
 [Commitlint][] Configuration to enforce commit message best practices on public repositories
 
 ## Installation
 
 ```bash
-$ npm install commitlint @logdna/commitlint-config-mezmo
+$ npm install commitlint @logdna/commitlint-config
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ Adding a script to expose `commitlint` in the package.json `scripts`.
 Below is an example of linting all commits on the active branch that have not been merged into main
 ```json
 "commitlint": {
-  "extends": "@logdna/commitlint-config-mezmo"
+  "extends": "@logdna/commitlint-config"
 },
 "scripts": {
   "commitlint": "commitlint --from=origin/main --to=HEAD",
@@ -31,14 +31,14 @@ Below is an example of linting all commits on the active branch that have not be
 This package may additionally be installed globally as a command lint tool (`commitlint-mezmo`)
 
 ```bash
-$ npm install -g @logdna/commitlint-config-mezmo
+$ npm install -g @logdna/commitlint-config
 $ commitlint-mezmo <options>
 ```
 
 or executed immediately with `npx`
 
 ```bash
-$ npx @logdna/commitlint-config-mezmo -f origin/master
+$ npx @logdna/commitlint-config -f origin/master
 ```
 
 #### OPTIONS
