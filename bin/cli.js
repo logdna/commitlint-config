@@ -14,7 +14,7 @@ const {version} = require('../package.json')
 const usage = fs.readFileSync(path.join(__dirname, './usage.txt'), 'utf8')
 
 const log = util.debuglog('lint')
-const HELP_URL = 'https://github.com/logdna/commitlint-config-mezmo'
+const HELP_URL = 'https://github.com/logdna/commitlint-config'
 const ROOT = path.join(__dirname, '..')
 const CONFIG = path.join(ROOT, 'index.js')
 

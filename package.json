@@ -1,5 +1,5 @@
 {
-  "name": "@logdna/commitlint-config-mezmo",
+  "name": "@logdna/commitlint-config",
   "description": "Commitlint configuration to enforce commit message best practices",
   "version": "1.0.1",
   "main": "index.js",
@@ -26,11 +26,11 @@
   "author": "Darin Spivey <darin.spivey@mezmo.com>",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/logdna/commitlint-config-mezmo"
+    "url": "git+ssh://git@github.com/logdna/commitlint-config"
   },
-  "homepage": "https://github.com/logdna/commitlint-config-mezmo",
+  "homepage": "https://github.com/logdna/commitlint-config",
   "bugs": {
-    "url": "https://github.com/logdna/commitlint-config-mezmo/issues"
+    "url": "https://github.com/logdna/commitlint-config/issues"
   },
   "license": "SEE LICENSE IN LICENSE",
   "publishConfig": {

@@ -1,6 +1,6 @@
 library 'magic-butler-catalogue'
 
-def PROJECT_NAME = "commitlint-config-mezmo"
+def PROJECT_NAME = "commitlint-config"
 def CURRENT_BRANCH = [env.CHANGE_BRANCH, env.BRANCH_NAME]?.find{branch -> branch != null}
 def DEFAULT_BRANCH = 'main'
 def TRIGGER_PATTERN = ".*@logdnabot.*"
